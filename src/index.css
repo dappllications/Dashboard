@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Futuristic Blockchain dApp Builder Design System */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  :root {
+    /* Core Dark Theme */
+    --background: 220 20% 8%;
+    --foreground: 220 5% 95%;
+
+    /* Card and Surface Colors */
+    --card: 220 15% 12%;
+    --card-foreground: 220 5% 95%;
+    --card-border: 220 15% 18%;
+
+    /* Popover */
+    --popover: 220 15% 10%;
+    --popover-foreground: 220 5% 95%;
+
+    /* Primary - Neon Blue */
+    --primary: 207 79% 48%;
+    --primary-foreground: 220 5% 95%;
+    --primary-glow: 207 100% 70%;
+
+    /* Secondary - Neon Green */
+    --secondary: 159 77% 42%;
+    --secondary-foreground: 220 20% 8%;
+    --secondary-glow: 159 100% 60%;
+
+    /* Muted Elements */
+    --muted: 220 15% 15%;
+    --muted-foreground: 220 5% 65%;
+
+    /* Accent Colors */
+    --accent: 220 15% 18%;
+    --accent-foreground: 220 5% 95%;
+
+    /* Status Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 5% 95%;
+    --success: 159 77% 42%;
+    --success-foreground: 220 20% 8%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 220 20% 8%;
+
+    /* Border and Input */
+    --border: 220 15% 20%;
+    --input: 220 15% 15%;
+    --ring: 207 79% 48%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(207 79% 48%), hsl(207 100% 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(159 77% 42%), hsl(159 100% 60%));
+    --gradient-neon: linear-gradient(135deg, hsl(207 79% 48%), hsl(159 77% 42%));
+    --gradient-dark: linear-gradient(135deg, hsl(220 20% 8%), hsl(220 15% 12%));
+
+    /* Shadows */
+    --shadow-glow: 0 0 20px hsl(207 79% 48% / 0.3);
+    --shadow-neon: 0 0 30px hsl(207 100% 70% / 0.4);
+    --shadow-green: 0 0 20px hsl(159 100% 60% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
+
+  /* Sidebar Colors */
+  --sidebar-background: 220 15% 10%;
+  --sidebar-foreground: 220 5% 95%;
+  --sidebar-primary: 207 79% 48%;
+  --sidebar-primary-foreground: 220 5% 95%;
+  --sidebar-accent: 220 15% 15%;
+  --sidebar-accent-foreground: 220 5% 95%;
+  --sidebar-border: 220 15% 18%;
+  --sidebar-ring: 207 79% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
